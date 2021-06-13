@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário</title>
+
+<Style>
+    input{
+        display:block
+    }
+</Style>
+</head>
+
+<body>
+<form action="index.html" target="_blank" method="POST">
+
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+
+    <label for="country">País:</label><br>
+    <input type="text" name="country" value="Brasil" readonly><br>
+    <input type="submit" value="Submit">
+    <label for="name">Nome Completo:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    <label for="RG">RG:</label><br>
+    <input type="number" id="RG" name="RG" required><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <label for="tel">Telefone:</label><br>
+    <input type="tel" id="tel" name="tel"><br>
+    <label for="sobre">Fale sobre você:</label><br>
+    <textarea name="message" rows="15" cols="30">
+    </textarea><br>
+    <label for="senha">Senha:</label><br>
+    <input type="password" id="senha" name="senha" required><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Informações</legend>
+
+        <label for="cor">Selecione sua cor:</label>
+        <input type="color" id="cor" name="cor"><br>
+
+            <select id=continente name="Continente">
+                <option value="africa">África</option>
+                <option value="america">América</option>
+                <option value="asia"> Ásia</option>
+                <option value="europa">Europa</option>
+                <option value="oceania">Oceânia</option>
+                <option value="antartida">Antártida</option>
+            </select><br>
+            <br>
+            
+            <label for="idioma">Seu idioma oficial:</label>
+            <input list="idioma">
+            <datalist id="idioma" name="idioma">
+                <option value="Português(Brasil)">
+                <option value="Inglês">
+                <option value="Espanhol">
+                <option value="Francês">
+            </datalist><br>
+
+        <button type="button" onclick="alert('Olá,seja bem-vindo!')">
+            Receba uma mensagem!
+        </button>
+    </fieldset>
+
+    <input type="submit" value="Enviar"><br>
+    <input type="reset" value="Apagar"><br>
+
+</body>
+</form>
+</html>
